@@ -7,6 +7,7 @@ Configure the SoapyHifiBerry config file with the correct audio board name and s
 ## Hardware
 Kicad files and gerbers are availeble in hardware directory.
 R10 and R11 are used to switch between clock from the Pi or internal PLL of the pcm5102 (gnd is internal pll)
+J5 exposes I2S for setting the mixer frequency of the si5351 on the Tayloe mixer board.
 
 ## Prototype
 Picture shows prototype using cheep aliexpress adc and dac boards
