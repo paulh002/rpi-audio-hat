@@ -6,12 +6,16 @@ Configure the SoapyHifiBerry config file with the correct audio board name and s
 
 To test the board:
 - To check if board is loaded:
+```
 aplay -l 
 arecord -l
+```
 
 - Reord and play:
+```
 arecord -D hw:0,1 -c 2 -f S24_LE -r 96000 test.wav
 aplay -c2 -f S24_LE -r 96000 test.wav
+```
 
 ## Hardware
 Kicad files and gerbers are availeble in hardware directory.
