@@ -40,7 +40,7 @@ pcm 1808
 ## Kicad files
 Kicad design is a pcb version of the audio board
 
-![pcb](https://github.com/paulh002/rpi-audio-hat/blob/main/RPi_Hat.jpg)
+![pcb](https://github.com/paulh002/rpi-audio-hat/blob/main/RPi_Hat.png)
 
 
 ## How compile and install driver for pcm1808 and pcm5102
