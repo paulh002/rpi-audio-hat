@@ -5,8 +5,10 @@ The SoapyHifiBerry driver is used to supply IQ signals to the SDR software see s
 Configure the SoapyHifiBerry config file with the correct audio board name and sample frequencey
 
 ## Hardware
-Kicad files and gerbers are availeble in hardware directory
+Kicad files and gerbers are availeble in hardware directory.
+R10 and R11 are used to switch between clock from the Pi or internal PLL of the pcm5102 (gnd is internal pll)
 
+## Prototype
 Picture shows prototype using cheep aliexpress adc and dac boards
 To connect the boards you can use this table:
 
@@ -45,7 +47,7 @@ Kicad design is a pcb version of the audio board
 
 ## How compile and install driver for pcm1808 and pcm5102
 To support the audio card in slave mode an overlay need to be created. The raspberry pi supports already most audio cards with pcm1808 and pcm5102.
-The procedures and files are taken from Akiyuki Okayasu github page https://github.com/AkiyukiOkayasu/RaspberryPi_I2S_Slave
+The procedure and files are taken from Akiyuki Okayasu github page https://github.com/AkiyukiOkayasu/RaspberryPi_I2S_Slave
 
 Compile on Raspberry Pi  
 ```bash
