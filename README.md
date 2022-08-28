@@ -4,7 +4,7 @@ Raspberry Pi PCM1808 and 5102 audio hat for SDR tranceiver
 ##Hardware
 Kicad files and gerbers are availeble in hardware directory
 
-
+![prototype](https://github.com/paulh002/rpi-audio-hat/blob/main/prototype.jpg)
 
 ## How compile and install driver for pcm1808 and pcm5102
 To support the audio card in slave mode an overlay need to be created. The raspberry pi supports already most audio cards with pcm1808 and pcm5102.
