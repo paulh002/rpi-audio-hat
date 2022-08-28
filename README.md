@@ -4,6 +4,15 @@ This board can be used with the Tayloe mixers in this repo https://github.com/pa
 The SoapyHifiBerry driver is used to supply IQ signals to the SDR software see sdrberry SDR software (https://github.com/paulh002/sdrberry)
 Configure the SoapyHifiBerry config file with the correct audio board name and sample frequencey
 
+To test the board:
+- To check if board is loaded:
+aplay -l 
+arecord -l
+
+- Reord and play:
+arecord -D hw:0,1 -c 2 -f S24_LE -r 96000 test.wav
+aplay -c2 -f S24_LE -r 96000 test.wav
+
 ## Hardware
 Kicad files and gerbers are availeble in hardware directory.
 R10 and R11 are used to switch between clock from the Pi or internal PLL of the pcm5102 (gnd is internal pll)
